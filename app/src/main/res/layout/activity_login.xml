@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.wcs.firebasechat.LoginActivity">
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/login_tool_bar"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_tool_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:text="Login to your account"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/ed_log_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ed_log_email"
+        android:layout_below="@+id/ed_log_email"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_pass"
+        android:layout_below="@+id/editText_pass"
+        android:layout_marginTop="26dp"
+
+        android:background="@color/colorAccent"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Login"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
